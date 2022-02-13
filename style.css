@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+:root {
+	--cor0: #2F2325; /* Roxo mais escuro */
+	--cor1: #483636; /* Rosa */
+	--cor2: #942f47; /* Vinho */
+	--cor3: #FFC7AC; /* Creme */
+	--cor4: #483636; /* roxo */
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Rowdies', cursive;
+	text-align: center;
+	color: var(--cor3);
+}
+
+body {
+	background-color: var(--cor0);
+}
+
+h1 {
+	margin-top: 35px;
+}
+
+div.main {
+	width: 450px;
+	height: 450px;
+	border: solid 2px var(--cor3);
+	border-radius: 15px;
+	background-color: var(--cor4);
+	display: flex;
+	margin: 35px auto;
+	align-items: center;
+	box-shadow: 0px 0px 3px var(--cor4);
+}
+
+div.content {
+	margin: auto;
+	width: 65%;
+}
+
+div.main > div.content > textarea {
+	height: 100px;
+	width: 100%;
+	background-color: var(--cor3);
+	outline: none;
+	color: var(--cor2);
+	border: 2px solid var(--cor0);
+	border-radius: 20px;
+	margin-bottom: 15px;
+	text-align: left;
+	padding: 3px 5px;
+}
+
+textarea::placeholder {
+	color: var(--cor1);
+	line-height: 100px;
+	text-align: center;
+}
+
+div.main > div.content > button {
+	background-color: var(--cor2);
+	display: block;
+	margin: auto;
+	padding: 10px;
+	color: var(--cor3);
+	border: none;
+	border-radius: 15px;
+}
+
+p {
+	margin-bottom: 50px;
+}
